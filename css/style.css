@@ -1,0 +1,300 @@
+/* CSS Reset */
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Header */
+
+#navigation {
+	background-color: black;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	padding: 0.8rem;
+	width: 100%;
+	z-index: 100;
+	border-top: 0;
+}
+
+/* Logo */
+
+#navigation #Logo {
+	font-family: "Kaushan Script", cursive;
+	font-size: 1.3rem;
+	color: wheat;
+	cursor: pointer;
+}
+
+/* Navigation */
+
+#navigation ul {
+	display: flex;
+	font-size: 1.1rem;
+}
+
+#navigation li {
+	font-family: "Kaushan Script", cursive;
+	margin: auto;
+	list-style: none;
+}
+
+#navigation li a {
+	color: wheat;
+	text-decoration: none;
+	padding: 5px 20px;
+}
+
+#navigation li a:hover {
+	color: white;
+}
+
+/* Home Section */
+
+#home::before {
+	content: "";
+	position: absolute;
+	background-color: black;
+	background: url(".././img/home.jpg");
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.6;
+}
+
+#home {
+	position: relative;
+	margin: auto;
+	width: 80vw;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	line-height: 4rem;
+}
+
+#home h4 {
+	font-size: 2rem;
+	font-family: "Great Vibes", cursive;
+}
+
+#home h1 {
+	font-size: 3.5rem;
+	font-family: "Great Vibes", cursive;
+}
+
+#home button {
+	background-color: black;
+	color: white;
+	padding: 10px;
+	margin-top: 15px;
+	border: 2px solid white;
+	font-weight: bold;
+}
+
+/* Welcome section */
+
+#Welcome {
+	margin-top: 15px;
+	display: flex;
+}
+
+#Welcome img {
+	max-width: 100%;
+	max-height: 100%;
+	border: 2px dotted white;
+}
+
+#Welcome #content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 2px dotted white;
+	margin: 0 10px 0 10px;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+	font-family: "Kaushan Script", cursive;
+	color: wheat;
+	background-color: #383737b0;
+}
+
+#Welcome #content #contenth,
+#contentp {
+	padding: 0.4rem;
+}
+
+#Welcome #content h2 {
+	font-size: 3.5rem;
+}
+
+#Welcome #content p {
+	padding: 2rem;
+}
+
+/* Menu */
+
+#Menu {
+	position: relative;
+}
+
+#Menu::before {
+	content: "";
+	position: absolute;
+	background: url(".././img/pizzamenubg.jpg") center center/cover;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	opacity: 0.6;
+}
+
+#Menu #menutitle h2 {
+	color: white;
+	text-align: center;
+	padding: 15px;
+	margin: 10px 20px 8px 0px;
+	font-family: "Great Vibes", cursive;
+	font-size: 2.3rem;
+}
+
+#Menu #menuitems {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#Menu #menuitems .item {
+	font-family: "Kaushan Script", cursive;
+	text-align: center;
+	margin: 0 5px 0 5px;
+	padding: 10px;
+}
+
+#Menu #menuitems .item img {
+	border: 2px solid white;
+	height: 250px;
+	width: 250px;
+	padding: 5px;
+}
+
+#Menu #menuitems .item .menuh,
+.menup {
+	padding: 5px;
+	color: white;
+}
+
+/* Services Section */
+
+#services {
+	background-color: white;
+}
+
+#services #servicestitle {
+	color: black;
+	text-align: center;
+	padding: 15px;
+	margin: 10px 20px 0px 0px;
+	font-family: "Great Vibes", cursive;
+	font-size: 2.3rem;
+}
+
+#servicesitems {
+	display: flex;
+}
+
+#servicesitems .items {
+	margin: 0 10px 15px 10px;
+	text-align: center;
+	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4);
+	font-family: "Kaushan Script", cursive;
+}
+
+#servicesitems .items img {
+	border-radius: 5px;
+	margin-bottom: 10px;
+	height: 200px;
+	width: 250px;
+}
+
+#servicesitems .items h4 {
+	padding: 5px;
+	color: black;
+}
+
+#servicesitems .items p {
+	padding: 5px;
+	color: black;
+}
+
+/* Contact Us */
+
+#ContactUs::before {
+	content: "";
+	position: absolute;
+	background: url(".././img/ourstory.jpg");
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	opacity: 0.6;
+}
+
+#ContactUs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	color: white;
+	margin-bottom: 10px;
+	/* text-align: center; */
+}
+
+#ContactUs h3 {
+	padding: 10px;
+	margin: 10px 15px 0px 0px;
+	font-family: "Great Vibes", cursive;
+	font-size: 2.3rem;
+	text-shadow: 2px 2px 8px black;
+}
+
+#ContactUs h4 {
+	padding: 10px;
+	margin: 0px 20px 0px 0px;
+	font-family: "Great Vibes", cursive;
+	font-size: 1.8rem;
+	text-shadow: 2px 2px 8px black;
+}
+
+#ContactUs p {
+	padding: 2px;
+	font-family: "Kaushan Script", cursive;
+	text-shadow: 2px 2px 8px black;
+	margin-bottom: 3px;
+}
+
+/* Footer */
+
+#End p {
+	color: white;
+	text-align: center;
+	margin: 20px;
+	font-weight: bold;
+}
+
+/* Happy Ending */
